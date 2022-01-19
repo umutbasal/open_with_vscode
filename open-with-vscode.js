@@ -1,21 +1,23 @@
 // check if the page is repo page
-if (document.querySelector("#command-palette-pjax-meta-data").getAttribute('data-subject-type') == 'Repository') {
+if (document.querySelector("#repo-content-pjax-container")) {
 
 	// hold junk element to prevent destroy existing events of the old elements
 	let junkElement = document.createElement("div");
 
 	// Create the tab
-	const tabs = document.querySelector("#repo-content-pjax-container get-repo ul");
-	junkElement.innerHTML = `
+	const tabs = document.querySelector("#repo-content-pjax-container get-repo feature-callout tab-container ul");
+	if (tabs) {
+		junkElement.innerHTML = `
 		<li role="presentation" data-view-component="true" class="hx_tabnav-in-dropdown-wrapper flex-1 d-inline-flex">
 			<button data-tab="vscode" data-action="click:get-repo#vscodeTabSelected focusin:get-repo#vscodeTabSelected" id="vscode-tab" type="button" role="tab" aria-controls="vscode-panel" aria-selected="false" data-view-component="true" class="tabnav-tab flex-1" tabindex="-1">
 				<span data-view-component="true">VS Code</span>
 			</button>
 		</li>`;
-	tabs.appendChild(junkElement.firstElementChild);
+		tabs.appendChild(junkElement.firstElementChild);
+	}
 
 	// Create the container
-	const tabContainer = document.querySelector("#repo-content-pjax-container get-repo feature-callout tab-container");
+	const tabContainer = tabs ? document.querySelector("#repo-content-pjax-container get-repo feature-callout tab-container") : document.querySelector("#repo-content-pjax-container get-repo details ul");
 	junkElement.innerHTML = `
 		<div id="vscode-panel" role="tabpanel" tabindex="0" aria-labelledby="vscode-tab" data-view-component="true">
 			<ul class="list-style-none">
