@@ -28,21 +28,21 @@ if (document.querySelector("#repo-content-pjax-container")) {
 					<a class="d-flex flex-items-center color-fg-default text-bold no-underline" rel="nofollow"
 						id="open_with_vscode_opt_1"
 						href="#">
-						Read on VS Code
+						Open with VS Code
 					</a>
 				</li>
 				<li class="Box-row Box-row--hover-gray p-3 mt-0">
 					<a class="d-flex flex-items-center color-fg-default text-bold no-underline" rel="nofollow"
 						id="open_with_vscode_opt_2"
 						href="#">
-						Clone to docker with Remote Containers
+						Clone to docker (Remote Containers)
 					</a>
 				</li>
 				<li class="Box-row Box-row--hover-gray p-3 mt-0">
 					<a class="d-flex flex-items-center color-fg-default text-bold no-underline" rel="nofollow"
 						id="open_with_vscode_opt_3"
 						href="#">
-						Read on Browser
+						Open with VSCode.dev (browser)
 					</a>
 				</li>
 			</ul>
