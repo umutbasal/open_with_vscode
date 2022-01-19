@@ -2,7 +2,7 @@
   "name": "open_with_vscode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "open-with-vscode.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
