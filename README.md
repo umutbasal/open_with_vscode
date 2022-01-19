@@ -7,3 +7,4 @@ clone it to your local and load it as unpacked extension on `chrome://extensions
 # Screenshots
 ![1](ss_1.png)
 ![2](ss_2.png)
+![3](ss_3.png)
