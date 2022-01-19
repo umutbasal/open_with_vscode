@@ -1,0 +1,19 @@
+{
+	"name": "Open with VS Code",
+	"description": "This extension allows you to open github repos in vscode with remote container (local codespace), strict read mode and vscode web app options!",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*.github.com/*"
+			],
+			"js": [
+				"open-with-vscode.js"
+			]
+		}
+	]
+}
