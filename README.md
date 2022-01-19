@@ -3,3 +3,7 @@ this extension allows you to open github repos in vscode with remote container (
 
 # Install
 clone it to your local and load it as unpacked extension on `chrome://extensions` page
+
+# Screenshots
+![1](ss_1.png)
+![2](ss_2.png)
