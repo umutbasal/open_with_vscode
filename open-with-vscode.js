@@ -1,8 +1,8 @@
-var oldTitle = document.title;
+let oldTitle = document.title;
 
-var bodyList = document.querySelector("body")
+const body = document.querySelector("body")
 
-var observer = new MutationObserver(function (mutations) {
+const observer = new MutationObserver(function (mutations) {
 	mutations.forEach(function (mutation) {
 		if (oldTitle != document.title) {
 			oldTitle = document.title;
@@ -12,12 +12,12 @@ var observer = new MutationObserver(function (mutations) {
 	});
 });
 
-var config = {
+const config = {
 	childList: true,
 	subtree: true
 };
 
-observer.observe(bodyList, config);
+observer.observe(body, config);
 
 function main() {
 	// check if the page is repo page
